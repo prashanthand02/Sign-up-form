@@ -4,7 +4,7 @@ body {
     background-color: rgba(233, 237, 240, 0.274);
 }
 #image > img {
-    width: 40vw;
+    width: 35vw;
     height: 100vh;
     position: relative;
 }
@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40vw;
+    width: 35vw;
     background-color: rgba(0, 0, 0, 0.438);
     margin-bottom: 52vh;
 }
@@ -39,12 +39,14 @@ body {
 #text-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 #text {
     line-height: 20px;
     font-size: large;
     font-weight: bolder;
     width: 500px;
+    padding: 0 25px;
 }
 form{
     box-shadow: 0px 2px 2px 5px rgba(0, 0, 0, 0.089);
@@ -77,4 +79,31 @@ label {
     margin-top: 20px;
     font-size: smaller;
     font-weight: bolder;
+}
+input :valid {
+    border: 2px solid rgb(77, 201, 77);
+}
+input :invalid {
+    border: 2px solid rgb(204, 55, 55);
+}
+#text-container > button{
+    background-color: rgba(44, 97, 44, 0.74);
+    color: white;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: larger; 
+    margin: 20px 20px 30px 30px;
+}
+#text-container > button:hover {
+    background-color: rgba(44, 97, 44, 0.9);
+    cursor: pointer;
+}
+#text-container > p {
+    margin: 0 30px;
+    font-weight: bold;
+}#text-container > p > a {
+    color: rgba(44, 97, 44, 0.87);
+    text-decoration: none;
 }
